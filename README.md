@@ -4,7 +4,7 @@ Simple log collector for Kubernetes clusters, with Loggly and S3 integrations.
 
 ## Usage
 
-Available on Docker Hub as [pavlov/fluentd](https://hub.docker.com/r/pavlov/fluentd). If you'd like to make your
+Available on Docker Hub as [pavlov/fluentd](https://hub.docker.com/r/pavlov/fluentd).
 
 This container is meant to replace or augment cluster-level logging in Kubernetes. Accordingly, many of the directives in `fluent.conf` are borrowed from the official [fluentd image](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons/fluentd-elasticsearch/fluentd-es-image). If you don't want to configure which fluentd plugins you're using (i.e. remove Loggly or change how the logs are persisted in S3), fork this repository.
 
