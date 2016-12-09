@@ -1,5 +1,5 @@
 FROM alpine:3.4
-MAINTAINER Alex Kern <alex@usepavlov.com>
+MAINTAINER Alex Kern <alex@pavlov.ai>
 
 RUN apk --no-cache --update add \
                             build-base \
@@ -9,7 +9,7 @@ RUN apk --no-cache --update add \
                             ruby-dev && \
     echo 'gem: --no-document' >> /etc/gemrc && \
     gem install oj && \
-    gem install fluentd -v 0.12.26 && \
+    gem install fluentd -v 0.14.9 && \
     gem install fluent-plugin-s3 && \
     gem install fluent-plugin-loggly && \
     gem install fluent-plugin-kubernetes_metadata_filter && \
