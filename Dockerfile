@@ -9,6 +9,7 @@ RUN apk --no-cache --update add \
                             ruby-dev && \
     echo 'gem: --no-document' >> /etc/gemrc && \
     gem install oj && \
+    gem install json && \
     gem install fluentd -v 0.14.9 && \
     gem install fluent-plugin-s3 && \
     gem install fluent-plugin-loggly && \
